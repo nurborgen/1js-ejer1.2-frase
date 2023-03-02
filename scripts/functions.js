@@ -1,39 +1,39 @@
 'use strict'
 
-function letras(cadena) {
+function letters(cadena) {
 
 }
 
-function palabras(cadena) {
+function words(cadena) {
 
 }
 
-function maysc(cadena) {
+function upperString(cadena) {
 
 }
 
-function titulo(cadena) {
+function titleString(cadena) {
 
 }
 
-function letrasReves(cadena) {
+function backwardsLetters(cadena) {
 
 }
 
-function palabrasReves(cadena) {
+function backwardsWords(cadena) {
 
 }
 
-function palindromo(cadena) {
+function palindrome(cadena) {
 
 }
 
 module.exports = {
-	letras,
-	palabras,
-	maysc,
-	titulo,
-	letrasReves,
-	palabrasReves,
-	palindromo
+	letters,
+	words,
+	upperString,
+	titleString,
+	backwardsLetters,
+	backwardsWords,
+	palindrome
 }
