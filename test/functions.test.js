@@ -4,29 +4,28 @@ describe('Funciones sobre la frase "Una frase para probar"', () => {
     const frase = 'Una frase para probar';
     const frase2 = 'La ruta nos aporto otro paso natural';
 
-    test('letras de frase devuelve 21', () => {
-      expect(funciones.letras(frase)).toBe(21);
+    test('letters devuelve 21', () => {
+      expect(funciones.letters(frase)).toBe(21);
     });
-    test('palabras devuelve 4', () => {
-      expect(funciones.palabras(frase)).toBe(4);
+    test('words devuelve 4', () => {
+      expect(funciones.words(frase)).toBe(4);
     });
-    test('maysc devuelve UNA FRASE PARA PROBAR', () => {
-      expect(funciones.maysc(frase)).toBe('UNA FRASE PARA PROBAR');
+    test('upperString devuelve UNA FRASE PARA PROBAR', () => {
+      expect(funciones.upperString(frase)).toBe('UNA FRASE PARA PROBAR');
     });
-    test('titulo devuelve Una Frase Para Probar ', () => {
-      expect(funciones.titulo(frase)).toBe('Una Frase Para Probar');
+    test('titleString devuelve Una Frase Para Probar ', () => {
+      expect(funciones.titleString(frase)).toBe('Una Frase Para Probar');
     });
     test('letrasReves devuelve raborp arap esarf anU', () => {
       expect(funciones.letrasReves(frase)).toBe('raborp arap esarf anU');
     });
-    test('palabrasReves devuelve probar para frase Una', () => {
-      expect(funciones.palabrasReves(frase)).toBe('probar para frase Una');
+    test('backwardsLetters devuelve probar para frase Una', () => {
+      expect(funciones.backwardsLetters(frase)).toBe('probar para frase Una');
     });
-
-    test('Un no palíndromo devuelve FALSE', () => {
-      expect(funciones.palindromo(frase)).toBe(false);
+    test('palindrome sobre "Una frase para probar"  devuelve FALSE', () => {
+      expect(funciones.palindrome(frase)).toBe(false);
     });
-    test('Un palíndromo devuelve TRUE', () => {
+    test('palindrome sobre "La ruta nos aporto otro paso natural"  devuelve TRUE', () => {
       expect(funciones.palindromo(frase2)).toBe(true);
     });
 });
