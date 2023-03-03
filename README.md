@@ -2,6 +2,14 @@
 Repositorio del ejercicio 1.2 del bloque 1 del mòdulo DWEC de 2nDAW
 
 # Bloc 1: Javascript. UT 1: Sintaxis
+## Preparar el entorno
+Para realizar esta práctica clona el repositorio <https://github.com/dwec-batoi/1js-ejer1.2-frase.git>
+
+Cuando quieras pasar los test escribe en la terminal:
+```bash
+npm run tests
+```
+
 ## Práctica 1.2 - Frase
 Vamos a pedir al usuario que introduzca una frase y a continuación mostraremos en la consola:
 - el número de letras y de palabras que tiene
@@ -51,7 +59,7 @@ Intenta usar en cada caso el bucle más adecuado. Las funciones `split` y `join`
 - siempre es bueno refactorizar el código: cuando nuestro programa ya funciona bien le damos un “repaso” para mejorar su claridad (y lo volvemos a probar)
 
 ### Pasar los test
-Por último debes comprobar tu código antes de entregarlo para asegurarte que apruebas esta práctica. Para hacer accesibles las funciones al test debes añadir al final de tu fichero _functions.js_ la instrucción:
+Por último debes comprobar tu código antes de entregarlo para asegurarte que apruebas esta práctica. Para hacer accesibles las funciones al test se ha añadido al final de tu fichero _functions.js_ la instrucción:
 ```javascript
 module.exports = {
 	letters,
@@ -65,8 +73,3 @@ module.exports = {
 ```
 
 > Esto hace que el navegador muestre en la consola el error de Javascript `ReferenceError: module is not defined` pero continúa funcionando correctamente
-
-Ahora debes inicializar el proyecto _npm_ con el comando `npm init`. Cuando pregunte por el comando para ejecutar los tests indicaremos que es **jest**. Una vez hecho podemos pasar los test escribiendo en la terminal:
-```bash
-npm run tests
-```
