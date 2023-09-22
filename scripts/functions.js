@@ -1,23 +1,24 @@
 'use strict'
 
 function letters(cadena) {
-
+	return cadena.length
 }
 
 function words(cadena) {
-
+	return cadena.split(' ').length
 }
 
 function upperString(cadena) {
-
+	return cadena.toUpperCase()
 }
 
 function titleString(cadena) {
-
+	return  (cadena.split(' ').map( cadena => cadena.charAt(0).toLocaleUpperCase() + cadena.slice(1))).join(' ');
 }
 
 function backwardsLetters(cadena) {
-
+	let array = cadena.split(' ')
+	return array.map(cadena => cadena.split(' ')).reverse().join(' ')
 }
 
 function backwardsWords(cadena) {
