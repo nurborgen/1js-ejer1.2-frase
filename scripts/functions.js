@@ -17,21 +17,18 @@ function titleString(cadena) {
 }
 
 function backwardsLetters(cadena) {
+	return cadena.split('').map(cadena => cadena.split('')).reverse().join('')
+}
+
+function backwardsWords(cadena) {
 	let array = cadena.split(' ')
 	return array.map(cadena => cadena.split(' ')).reverse().join(' ')
 }
 
-function backwardsWords(cadena) {
-	let array = cadena.split('')
-	return array.map(cadena => cadena.split('')).reverse().join('')
-}
-
 function palindrome(cadena) {
-	if(backwardsWords(cadena) == cadena) {
-		return true
-	} else {
-		return false
-	}
+	cadena = cadena.replaceAll(" ","").toLocaleUpperCase()
+	let cadenaReverse = backwardsLetters(cadena)
+	return cadena === cadenaReverse
 }
 
 module.exports = {
