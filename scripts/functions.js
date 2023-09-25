@@ -22,11 +22,16 @@ function backwardsLetters(cadena) {
 }
 
 function backwardsWords(cadena) {
-
+	let array = cadena.split('')
+	return array.map(cadena => cadena.split('')).reverse().join('')
 }
 
 function palindrome(cadena) {
-
+	if(backwardsWords(cadena) == cadena) {
+		return true
+	} else {
+		return false
+	}
 }
 
 module.exports = {
