@@ -1,6 +1,6 @@
 'use strict'
 
-const { letters, words } = require("./functions")
+//const { letters, words } = require("./functions")
 
 let cadena = prompt("Introduce una frase")
 
